@@ -1,0 +1,15 @@
+grumphp:
+  tasks:
+    phpcs:
+      standard: "dev/tests/static/framework/Magento/ruleset.xml"
+      tab_width: ~
+      ignore_patterns: []
+    git_blacklist:
+      keywords:
+        - "die("
+        - "exit;"
+        - "var_dump("
+        - "cnosole.log("
+    phpmd:
+        ruleset: [dev/tests/static/testsuite/Magento/Test/Php/_files/phpmd/ruleset.xml]
+        exclude : []
